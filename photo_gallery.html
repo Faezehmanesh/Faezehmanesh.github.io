@@ -1,270 +1,153 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  		<title>Highway - Free CSS Template</title>
-<!-- 
 
-Highway Template
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Highway - Photo Gallery</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/light-box.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 
-https://templatemo.com/tm-520-highway
+    <style>
+        .full-screen-portfolio .container-fluid {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
 
--->
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        .col-md-4 {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+            padding: 0;
+            margin: 0;
+        }
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-
-        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
+        .portfolio-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
 
 <body>
-
     <nav>
         <div class="logo">
-          <a href="photo_gallery.html"><em></em></a>
+            <a href="photo_gallery.html"><em></em></a>
         </div>
-      
-      
-        <!-- Icon that links to another page -->
+
         <div class="icon-link">
             <a href="index.html">
-                <img src="img/prev.png" alt="Back" style="width:44px; height:auto;">
-                </a>
+                <img src="img/prev-1.png" alt="Back" style="width:77px; height:auto;">
+            </a>
         </div>
-      </nav>
-      
+    </nav>
 
     <div id="video-container">
         <div class="video-overlay"></div>
         <div class="video-content">
             <div class="inner">
-            <h1>Welcome to <em>my photo gallery</em>!</h1>
-              <p></p>
-              <p></p>
-                <!-- <div class="scroll-icon">
-                    <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
-                </div>     -->
-            </div>
+                <h1 style="font-family: 'Kanit', sans-serif; font-weight: 300; font-size: 48px; color: #ffffff; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); letter-spacing: 2px;">
+                    Welcome to <em style="font-weight:700; color:#ffd700;">my photo gallery</em>!
+                </h1>
+            </div>            
         </div>
-        <video autoplay="" loop="" muted>
-        	<source src="Biruni_Obs.mp4" type="video/mp4" />
+        <video autoplay loop muted>
+            <source src="Biruni_Obs.mp4" type="video/mp4" />
         </video>
     </div>
 
-
-   <!-- Fix image layout -->
-   <style>
-    .full-screen-portfolio .container-fluid {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0;
-      padding: 0;
-    }
-
-    .col-md-4 {
-      flex: 0 0 33.3333%;
-      max-width: 33.3333%;
-      padding: 0;
-      margin: 0;
-    }
-
-    .portfolio-item {
-      margin: 0;
-      padding: 0;
-    }
-
-    .portfolio-item img {
-      width: 100%;
-      height: 300px; /* adjust height as needed */
-      object-fit: cover;
-      display: block;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-
-  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
-
-<body>
-  <div class="full-screen-portfolio" id="portfolio">
-    <div class="container-fluid">
-      <div class="col-md-4">
-        <div class="portfolio-item">
-          <a href="img/lick.png" data-lightbox="lick">
-            <img src="img/lick.png" alt="Image 1">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="portfolio-item">
-          <a href="img/starrynightinred.png" data-lightbox="image-1">
-            <img src="img/starrynightinred.png" alt="Image 2">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="portfolio-item">
-          <a href="img/museum2.png" data-lightbox="image-1">
-            <img src="img/museum2.png" alt="Image 3">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="portfolio-item">
-          <a href="img/museum1.png" data-lightbox="image-1">
-            <img src="img/museum1.png" alt="Image 4">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="portfolio-item">
-          <a href="img/butterfly.png" data-lightbox="image-1">
-            <img src="img/butterfly.png" alt="Image 5">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="portfolio-item">
-          <a href="img/bythesea.png" data-lightbox="image-1">
-            <img src="img/bythesea.png" alt="Image 6">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="portfolio-item">
-          <a href="img/the man.png" data-lightbox="image-1">
-            <img src="img/the man.png" alt="Image 7">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="portfolio-item">
-          <a href="img/museum3.png" data-lightbox="image-1">
-            <img src="img/museum3.png" alt="Image 8">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="portfolio-item">
-          <a href="img/lovingmemory.png" data-lightbox="image-1">
-            <img src="img/lovingmemory.png" alt="Image 9">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-    <footer>
+    <div class="full-screen-portfolio" id="portfolio">
         <div class="container-fluid">
-        <div class="col-md-12">
-            <p>For more pictures, check out my <a href="https://www.flickr.com/photos/201042039@N05/albums" target="_blank">Flickr</a>!</p>
+            <!-- Images -->
+            <div class="col-md-4 portfolio-item"><a href="img/lick.png" data-lightbox="gallery"><img src="img/lick.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/lick3.png" data-lightbox="gallery"><img src="img/lick3.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/selfie.jpeg" data-lightbox="gallery"><img src="img/selfie.jpeg"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/museum1.png" data-lightbox="gallery"><img src="img/museum1.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/museum3.png" data-lightbox="gallery"><img src="img/museum3.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/thelook.png" data-lightbox="gallery"><img src="img/thelook.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/lick5.png" data-lightbox="gallery"><img src="img/lick5.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/lick6.png" data-lightbox="gallery"><img src="img/lick6.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/lick2.jpeg" data-lightbox="gallery"><img src="img/lick2.jpeg"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/the man.png" data-lightbox="gallery"><img src="img/the man.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/butterfly.png" data-lightbox="gallery"><img src="img/butterfly.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/lovingmemory.png" data-lightbox="gallery"><img src="img/lovingmemory.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/lookintotheeyes.png" data-lightbox="gallery"><img src="img/lookintotheeyes.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/yellow.png" data-lightbox="gallery"><img src="img/yellow.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/maninteather.png" data-lightbox="gallery"><img src="img/maninteather.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/dotintheblue.png" data-lightbox="gallery"><img src="img/dotintheblue.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/nemo.cut.png" data-lightbox="gallery"><img src="img/nemo.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/seattle.png" data-lightbox="gallery"><img src="img/seattle.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/Biruni.png" data-lightbox="gallery"><img src="img/Biruni2.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/Hafez.png" data-lightbox="gallery"><img src="img/Hafez2.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/observing night.png" data-lightbox="gallery"><img src="img/observing night.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/comet.png" data-lightbox="gallery"><img src="img/comet.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/theamazinglight.png" data-lightbox="gallery"><img src="img/theamazinglight.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/starrynightinred.png" data-lightbox="gallery"><img src="img/starrynightinred.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/redred.png" data-lightbox="gallery"><img src="img/redred.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/lightfestival.png" data-lightbox="gallery"><img src="img/lightfestival.png"></a></div>
+            <div class="col-md-4 portfolio-item"><a href="img/orange.png" data-lightbox="gallery"><img src="img/orange.png"></a></div>
         </div>
+    </div>
+
+    <!-- Footer in a gray box -->
+    <footer style="background-color:#181f5311;padding:20px;text-align:center;margin-top:0px;border-radius:8px;">
+        <div class="container-fluid">
+            <p style="color:#130505;margin:0;">For more pictures, check out my 
+                <a href="https://www.flickr.com/photos/201042039@N05/albums" target="_blank">Flickr</a>!
+            </p>
         </div>
     </footer>
-  
 
-
-      <!-- Modal button -->
-    <!-- <div class="popup-icon">
-      <button id="modBtn" class="modal-btn"><img src="img/contact-icon.png" alt=""></button>
-    </div>   -->
-
-    <!-- Modal -->
     <div id="modal" class="modal">
-      <!-- Modal Content -->
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h3 class="header-title">Say hello to <em>Highway</em></h3>
-          <div class="close-btn"><img src="img/close_contact.png" alt=""></div>    
-        </div>
-        <!-- Modal Body -->
-        <div class="modal-body">
-          <div class="col-md-6 col-md-offset-3">
-            <form id="contact" action="" method="post">
-                <div class="row">
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="btn">Send Message Now</button>
-                      </fieldset>
-                    </div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="header-title">Say hello to <em>Highway</em></h3>
+                <div class="close-btn"><img src="img/close_contact.png" alt=""></div>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-6 col-md-offset-3">
+                    <form id="contact" action="" method="post">
+                        <input name="name" type="text" class="form-control" placeholder="Your name..." required="">
+                        <input name="email" type="email" class="form-control" placeholder="Your email..." required="">
+                        <textarea name="message" rows="6" class="form-control" placeholder="Your message..." required=""></textarea>
+                        <button type="submit" class="btn">Send Message Now</button>
+                    </form>
                 </div>
-            </form>
-          </div>
+            </div>
         </div>
-      </div>
     </div>
 
-    
-
     <section class="overlay-menu">
-      <div class="container">
-        <div class="row">
-          <div class="main-menu">
-              <ul>
-                  <li>
-                      <a href="index.html">Home - Full-width</a>
-                  </li>
-                  <li>
-                      <a href="masonry.html">Home - Masonry</a>
-                  </li>
-                  <li>
-                      <a href="grid.html">Home - Small-width</a>
-                  </li>
-                  <li>
-                      <a href="about.html">About Us</a>
-                  </li>
-                  <li>
-                      <a href="blog.html">Blog Entries</a>
-                  </li>
-                  <li>
-                      <a href="single-post.html">Single Post</a>
-                  </li>
-              </ul>
-              <p>We create awesome templates for you.</p>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home - Full-width</a></li>
+                        <li><a href="masonry.html">Home - Masonry</a></li>
+                        <li><a href="grid.html">Home - Small-width</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog Entries</a></li>
+                        <li><a href="single-post.html">Single Post</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
     <script src="js/vendor/bootstrap.min.js"></script>
-    
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    
 </body>
+
 </html>
