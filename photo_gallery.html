@@ -35,6 +35,11 @@
             object-fit: cover;
             display: block;
         }
+
+        /* ADD THIS TO CHANGE LIGHTBOX BG COLOR */
+        .lightboxOverlay {
+            background-color: black !important;
+        }
     </style>
 </head>
 
@@ -55,10 +60,14 @@
         <div class="video-overlay"></div>
         <div class="video-content">
             <div class="inner">
-                <h1 style="font-family: 'Kanit', sans-serif; font-weight: 300; font-size: 48px; color: #ffffff; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); letter-spacing: 2px;">
+                <h1 style="font-family: 'Trebuchet MS', sans-serif; font-weight: 300; font-size: 48px; color: #ffffff; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); letter-spacing: 2px;">
                     Welcome to <em style="font-weight:700; color:#ffd700;">my photo gallery</em>!
                 </h1>
-            </div>            
+                <p style="font-family: 'Trebuchet MS', sans-serif; font-weight: 200; font-size: 18px; color: #ffffff; margin-top: 15px;">
+                    For more pictures, check out my 
+                    <a href="https://www.flickr.com/photos/201042039@N05/albums" target="_blank" style="color:#ffd700; text-decoration: underline;">Flickr account</a>.
+                </p>
+            </div>                                
         </div>
         <video autoplay loop muted>
             <source src="Biruni_Obs.mp4" type="video/mp4" />
