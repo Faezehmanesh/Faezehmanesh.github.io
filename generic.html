@@ -4,15 +4,93 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Home Page</title>
+		<title>Faezeh Manesh — Astronomer, UC Riverside</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Faezeh Manesh is a PhD student in Physics and Astronomy at UC Riverside, studying galaxy evolution at high redshift with JWST and ground-based telescopes." />
+		<meta name="author" content="Faezeh Manesh" />
+
+		<!-- TODO: replace the two URLs below with your real site address once it is live. -->
+		<meta property="og:type" content="profile" />
+		<meta property="og:title" content="Faezeh Manesh — Astronomer, UC Riverside" />
+		<meta property="og:description" content="PhD student in Physics and Astronomy at UC Riverside, studying galaxy evolution at high redshift with JWST." />
+		<meta property="og:url" content="https://faezehakhlaghimanesh.github.io/" />
+		<meta property="og:image" content="https://faezehakhlaghimanesh.github.io/images/pic07.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+
+		<link rel="icon" href="images/favicon.png" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			:root {
+				/*
+				  Accent colour, defined once instead of repeated inline.
+				  Change it here and it changes everywhere on the page.
+				*/
+				--accent: rgba(251, 214, 7, 0.934);
+			}
+
+			.accent,
+			.accent a {
+				color: var(--accent);
+			}
+
+			/* Two-column blocks that collapse to one column on small screens. */
+			.two-col {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;
+			}
+
+			.two-col > * {
+				flex: 1 1 20rem;
+				min-width: 0;
+			}
+
+			.two-col img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 8px;
+			}
+
+			/* Keep body text to a comfortable measure. */
+			.prose p {
+				text-align: justify;
+				max-width: 70ch;
+			}
+
+			.pub-list p {
+				max-width: 80ch;
+			}
+
+			/* Visible keyboard focus, which the template does not provide everywhere. */
+			a:focus-visible,
+			button:focus-visible {
+				outline: 3px solid var(--accent);
+				outline-offset: 2px;
+			}
+
+			.skip-link {
+				position: absolute;
+				left: -9999px;
+				top: 0;
+				z-index: 10000;
+				padding: 0.75em 1em;
+				background: #fff;
+				color: #000;
+			}
+
+			.skip-link:focus {
+				left: 0;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
+
+		<a class="skip-link" href="#main">Skip to main content</a>
 
 		<!-- Wrapper -->
 		<div id="wrapper">
@@ -20,7 +98,7 @@
 			<!-- Header -->
 			<!-- Note: The "styleN" class below should match that of the banner element. -->
 				<header id="header" class="alt style2">
-					<a href="index.html" class="logo"></strong> <span>Faezeh Manesh</span></a>
+					<a href="index.html" class="logo"><span>Faezeh Manesh</span></a>
 					<nav>
 						<a href="#menu">Menu</a>
 					</nav>
@@ -29,15 +107,14 @@
 			<!-- Menu -->
 				<nav id="menu">
 					<ul class="links">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="landing.html">ABOUT ME</a></li>
-						<li><a href="generic.html">RESEARCH</a></li>
-						<li><a href="photo_gallery.html">PHOTO GALLERY</a></li>
-						<li><a href="elements.html">Community Engagement & Outreach </a></li>
-					</ul>
-					<ul class="actions stacked">
-						<!-- <li><a href="#" class="button primary fit">Get Started</a></li> -->
-						<!-- <li><a href="#" class="button fit">Log In</a></li> -->
+						<li><a href="#banner">Home</a></li>
+						<li><a href="#about">About me</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#publications">Publications</a></li>
+						<li><a href="photo_gallery.html">Photo gallery</a></li>
+						<li><a href="#outreach">Community engagement &amp; outreach</a></li>
+						<li><a href="#cv">CV</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 
@@ -46,377 +123,352 @@
 				<section id="banner" class="style2">
 					<div class="inner">
 						<span class="image">
-							<img src="images/pic07.jpg" alt="" />
+							<img src="images/pic07.jpg" alt="Faezeh Manesh" />
 						</span>
 						<header class="major">
-							
+							<h1>Faezeh Manesh</h1>
 						</header>
 						<div class="content">
-
+							<p>PhD student in Physics and Astronomy at UC Riverside, studying how galaxies grew in the first billion years after the Big Bang.</p>
 						</div>
 					</div>
 				</section>
-				<!-- Main -->
-					<div id="main" class="alt">
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										
-										<h1>I'm Faezeh!</h1>
-									</header>
-									<span class="image main"><img src="" alt="" /></span>
-									<p style="text-align: justify;">
-                                    I am a third-year PhD student in the Department of Physics and Astronomy at UC Riverside, under the supervision of Dr. Brian Siana. I am involved in studying
-											the universe when it was young enough that we know very little about it. My main tools are space and
-											 ground-based telescopes, and of course, some languages other than human ones (for programming, of course!).</p>
-								</div>
-							</section>
-						<!-- One -->
-						<section id="one">
-							<div class="inner">
+			<!-- Main -->
+				<div id="main" class="alt">
+
+					<!-- About -->
+						<section id="about">
+							<div class="inner prose">
 								<header class="major">
-									<h1 id="Research">
-										<a target="_blank">Research</a>
-									</h1>
+									<h2>I'm Faezeh!</h2>
 								</header>
-								<span class="image main"><img src="" alt="" /></span>
-								<p style="text-align: justify;">
+								<p>
+									I am a PhD student in the Department of Physics and Astronomy at UC Riverside, where I
+									started in 2023, under the supervision of Dr. Brian Siana and co-supervised by Dr. John Weaver.
+									I study the universe when it was young enough that we know very little about it. My main tools
+									are space and ground-based telescopes, and of course, some languages other than human ones (for
+									programming, of course!).
+								</p>
+							</div>
+						</section>
+
+					<!-- Research -->
+						<section id="research">
+							<div class="inner prose">
+								<header class="major">
+									<h2>Research</h2>
+								</header>
+								<p>
 									I did my bachelor's in physics at Shiraz University. At that time, I was fortunate to be a
-										member of a research group at <a href="https://obs.shirazu.ac.ir/en/home" target="_blank">Biruni Observatory</a> 
-									in Shiraz, working under the supervision of Dr. Moein Mosleh. I did my undergraduate thesis on observing transiting exoplanets, 
-										collecting the data myself at the observatory and performing all the data reduction and 
-										analysis. After graduating, I joined a research group at the Institute for Research in 
-										Fundamental Sciences (IPM) in Tehran as a postbac researcher, worked with Dr. Atefeh Javadi
-										, studying the star formation history of the dwarf galaxy NGC 6822.</p>
-								<p  style="text-align: justify;">
-									Currently, I am a PhD student at the University of California, Riverside. My main research project is to study the evolution of
-									galaxies at high redshift using photometric and spectroscopic data. My primary research interests
-									are centered on understanding the burstiness of star formation and investigating the spatially 
-									resolved properties of massive, evolved systems at high redshifts. I aim to explore their formation 
-									mechanisms, evolutionary pathways, and their role in the broader context of galaxy evolution across cosmic time.</p>
+									member of a research group at <a href="https://obs.shirazu.ac.ir/en/home" target="_blank" rel="noopener">Biruni Observatory</a>
+									in Shiraz, working under the supervision of Dr. Moein Mosleh. I did my undergraduate thesis on
+									observing transiting exoplanets, collecting the data myself at the observatory and performing all
+									the data reduction and analysis. After graduating, I joined a research group at the Institute for
+									Research in Fundamental Sciences (IPM) in Tehran as a postbaccalaureate researcher, working with
+									Dr. Atefeh Javadi on the star formation history of the dwarf galaxy NGC 6822.
+								</p>
+								<p>
+									Currently, I am a PhD student at the University of California, Riverside. My main research project
+									is to study the evolution of galaxies at high redshift using photometric and spectroscopic data. My
+									primary research interests are centered on understanding the burstiness of star formation and
+									investigating the spatially resolved properties of massive, evolved systems at high redshifts. I aim
+									to explore their formation mechanisms, evolutionary pathways, and their role in the broader context
+									of galaxy evolution across cosmic time.
+								</p>
 							</div>
 						</section>
 
-					</div>
-									<!-- Main -->
-									<div id="main" class="alt">
-
-						<!-- Two -->
-						<section id="one">
-							<div class="inner">
+					<!-- Burstiness in dwarf galaxies -->
+						<section id="burstiness">
+							<div class="inner prose">
 								<header class="major">
-									<h1 style="text-align: center; color: rgba(251, 214, 7, 0.934)">
-										<a href="https://beasts-jwst.github.io/overview.html" target="_blank">
-											BEASTS in the BUBBLES
-										</a>
-									</h1>
+									<h3 class="accent" style="text-align: center;">
+										Burstiness in dwarf galaxies at 0.5 &lt; <em>z</em> &lt; 2.3
+									</h3>
 								</header>
-								<div style="display: flex; align-items: center;">
-									<div style="flex: 1;">
-										<p style="text-align: justify;">
-											BEASTS is a JWST Cycle 1 GO Program that will use the NIRSpec Integral Field 
-											Unit (IFU) to study the most luminous galaxies at z~9, only 500 million years after the Big Bang.
-											Using the spatially-resolved power of IFU spectroscopy, BEASTS will reveal the physical processes
-											responsible for the extreme UV luminosities of these galaxies, including their star-formation rates,
-											stellar masses, and dust extinction. These insights will be invaluable for refining models of
-											galaxy formation, and for understanding the existence of ultra-massive galaxies at later epochs
-											in the history of the cosmos.
-										</p>
-									</div>
-								</div>
+								<p>
+									Bursty star formation is well studied in low-mass galaxies in the local Universe, and JWST now
+									lets us look for it at higher redshift. Using NIRISS grism spectroscopy from GLASS, rest-frame UV
+									imaging from HST, and multiwavelength photometry from UNCOVER and MegaScience, I measure the
+									burstiness of star formation in more than 150 galaxies behind the Abell 2744 cluster. Strong
+									lensing by the cluster extends the sample down to dwarfs with stellar masses as low as
+									M<sub>&#9733;</sub> ~ 10<sup>7</sup> M<sub>&#9737;</sub>. Comparing H&alpha; with rest-frame UV
+									emission, which trace star formation over roughly 10 and 100 Myr, gives tentative evidence that
+									dwarf galaxies become increasingly bursty from the local Universe out to <em>z</em> &gt; 0.5.
+								</p>
 							</div>
 						</section>
-						<section id="one">
+
+					<!-- BEASTS -->
+						<section id="beasts">
+							<div class="inner prose">
+								<header class="major">
+									<h3 class="accent" style="text-align: center;">
+										<a href="https://beasts-jwst.github.io/overview.html" target="_blank" rel="noopener">BEASTS in the BUBBLES</a>
+									</h3>
+								</header>
+								<p>
+									BEASTS is a JWST Cycle 1 GO Program that will use the NIRSpec Integral Field Unit (IFU) to study
+									the most luminous galaxies at z~9, only 500 million years after the Big Bang. Using the
+									spatially-resolved power of IFU spectroscopy, BEASTS will reveal the physical processes responsible
+									for the extreme UV luminosities of these galaxies, including their star-formation rates, stellar
+									masses, and dust extinction. These insights will be invaluable for refining models of galaxy
+									formation, and for understanding the existence of ultra-massive galaxies at later epochs in the
+									history of the cosmos.
+								</p>
+							</div>
+						</section>
+
+					<!-- Exoplanets -->
+						<section id="exoplanets">
 							<div class="inner">
 								<header class="major">
-									<h1 style="text-align: center; color: rgba(251, 214, 7, 0.934)">
-										<a>
-											Observation of Transiting Exoplanets
-										</a>
-									</h1>
+									<h3 class="accent" style="text-align: center;">Observation of transiting exoplanets</h3>
 								</header>
-								<div style="display: flex; align-items: center;">
-									<div style="flex: 1;">
+								<div class="two-col">
+									<div>
 										<p style="text-align: justify;">
-											In my undergraduate project, under the supervision of Dr. Moein Mosleh at Biruni Observatory
+											In my undergraduate project, under the supervision of Dr. Moein Mosleh at Biruni Observatory,
 											Shiraz, Iran, I observed and collected data for the transiting exoplanet HAT-P-32b using the
-											observatory's telescope. I selected the target using the Exoplanet Transit Database (ETD)
-											and successfully observed two consecutive transits in the V and B bands. I performed data
-											reduction, image processing, and applied differential photometry to calibrate the images.
-											Finally, I made the transit light curve and used <a href="https://github.com/pearsonkyle/Exoplanet-Light-Curve-Analysis" target="_blank">ELCA</a> 
+											observatory's telescope. I selected the target using the Exoplanet Transit Database (ETD) and
+											successfully observed two consecutive transits in the V and B bands. I performed data reduction,
+											image processing, and applied differential photometry to calibrate the images. Finally, I made the
+											transit light curve and used
+											<a href="https://github.com/pearsonkyle/Exoplanet-Light-Curve-Analysis" target="_blank" rel="noopener">ELCA</a>
 											to extract key parameters, referencing the original discovery paper of HAT-P-32b.
 										</p>
 									</div>
-									<div style="flex: 1; text-align: center;">
-										<img src="images/exoplanet.png" alt="Observation of Transiting Exoplanets" style="max-width: 85%; height: auto;" />
+									<div>
+										<img src="images/exoplanet.png" alt="Transit light curve of HAT-P-32b measured at Biruni Observatory" />
 									</div>
 								</div>
 							</div>
-						</section>						
-						
-						<!-- three -->
-						<section id="one">
-							<div class="inner">
-								<h1 id="publications">
-									<a href="https://scholar.google.com/citations?user=mE1smmkAAAAJ&hl=en" target="_blank">Publications</a>
-								</h1>
-							</header>
-								My full name is Faezehsadat Akhlaghimanesh, but I use Faezeh Manesh for papers and in most places. You can find all my published work on my <a href="https://scholar.google.com/citations?user=mE1smmkAAAAJ&hl=en" target="_blank">Googl Scholar profile.</a> 
-								<hr>
-								<span class="image main"><img src="" alt="" /></span>
+						</section>
+
+					<!-- Publications -->
+						<section id="publications">
+							<div class="inner pub-list">
+								<header class="major">
+									<h2>Publications</h2>
+								</header>
 								<p>
-									[1] <strong>Manesh, F.</strong>, Weaver, J., ..., et al., (in preparation).
+									My full name is Faezehsadat Akhlaghimanesh, but I use Faezeh Manesh for papers and in most places.
+									You can find all my published work on my
+									<a href="https://scholar.google.com/citations?user=mE1smmkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.
+									<!-- TODO: add your ORCID and NASA ADS library links here — most astronomers will look for those first. -->
+								</p>
+								<hr />
+								<p>
+									[1] <strong>Manesh, F.</strong>, Weaver, J., et al. (in preparation).
 									<em>Unveiling Fast-Forming Galaxies at Cosmic Dawn</em>.
 								</p>
 								<p>
-									[2] de la Vega., ..., <strong>Manesh, F.</strong>, et al., 2024.
+									[2] de la Vega, A., et al. (incl. <strong>Manesh, F.</strong>), 2025.
 									<em>
-										<a href="https://arxiv.org/abs/2508.14972" target="_blank">
+										<a href="https://arxiv.org/abs/2508.14972" target="_blank" rel="noopener">
 											The Fraction of Clumpy Galaxies in JWST Surveys over 2 &lt; z &lt; 12
 										</a>
 									</em>.
 								</p>
 								<p>
-									[3] Taamoli, S., ..., <strong>Manesh, F.</strong>, et al., 2024.
+									[3] Taamoli, S., et al. (incl. <strong>Manesh, F.</strong>), 2024.
 									<em>
-										<a href="https://arxiv.org/abs/2411.09522" target="_blank">
-											COSMOS2020: Disentangling the Role of Mass and Environment in Star Formation Activity of Galaxies at 0.4 &lt; z &lt; 4.
+										<a href="https://arxiv.org/abs/2411.09522" target="_blank" rel="noopener">
+											COSMOS2020: Disentangling the Role of Mass and Environment in Star Formation Activity of Galaxies at 0.4 &lt; z &lt; 4
 										</a>
 									</em>.
 								</p>
 							</div>
 						</section>
-						<!-- Main -->
-						<div id="main" class="alt">
 
-							<!-- One -->
-							<section id="community-engagement">
-								<div class="inner">
-									<header class="major">
-										<h1>Community Engagement & Outreach </h1>
-									</header>
+					<!-- Community engagement -->
+						<section id="outreach">
+							<div class="inner">
+								<header class="major">
+									<h2>Community engagement &amp; outreach</h2>
+								</header>
 
-									<!-- Intro Paragraph -->
-									<p style="text-align: justify;">
-										At the beginning of my undergraduate studies, I was fortunate to join the outreach team at 
-										<a href="https://obs.shirazu.ac.ir/en/home" target="_blank">Biruni Observatory</a>.
-										As part of this team, I helped organize events such as stargazing nights, public lectures, and guided tours, 
-										showcasing the observatory's facilities and telescopes. This experience allowed me to share my passion for
-										astronomy, help others appreciate the beauty of the universe, and discover how fulfilling it is to inspire 
-										curiosity and wonder in others. As a graduate student now, I’m deeply passionate about continuing to contribute 
-										to outreach events. If you have any ideas or projects in mind, I’d be more than happy to hear them and get involved!
-									</p>
+								<p style="text-align: justify;">
+									At the beginning of my undergraduate studies, I was fortunate to join the outreach team at
+									<a href="https://obs.shirazu.ac.ir/en/home" target="_blank" rel="noopener">Biruni Observatory</a>.
+									As part of this team, I helped organize events such as stargazing nights, public lectures, and guided
+									tours, showcasing the observatory's facilities and telescopes. This experience allowed me to share my
+									passion for astronomy, help others appreciate the beauty of the universe, and discover how fulfilling
+									it is to inspire curiosity and wonder in others. As a graduate student now, I'm deeply passionate about
+									continuing to contribute to outreach events. If you have any ideas or projects in mind, I'd be more than
+									happy to hear them and get involved!
+								</p>
 
-									<!-- Staryab Section -->
-									<div class="row">
-										<!-- Text Column -->
-										<div class="col-6 col-12-small">
-											<h3 style="text-align: justify; color: rgba(251, 214, 7, 0.93);">Staryab</h3>
-											<p style="text-align: justify;">
-												I am a co-manager and author at 
-												<a href="https://staryab.com" target="_blank">Staryab</a>, 
-												a monthly astrophysical literature website in Farsi, run by Iranian astronomers from around the world. 
-												Staryab aims to bridge the gap between professional astronomy and those at the start of their
-												journey—undergraduate students in physics and astronomy, passionate high school students, and amateur astronomers. 
-												Each month, we feature a paper and present it in a clear, accessible format for our readers. 
-												These articles are prepared by Iranian professional astronomers, both within Iran and abroad. 
-												If you’re interested in contributing to Staryab, don’t hesitate to get in touch—we’d love to hear from you!
-											</p>
-											<a href="https://www.instagram.com/staryab.astro/?hl=en" 
-											class="icon brands alt fa-instagram" 
-											style="margin-top: 15px; font-size: 20px; color: rgba(251, 214, 7, 0.93); text-decoration: none;">
-												<span style="margin-left: 8px;">Check out our Instagram</span>
-											</a>
-										</div>
-
-										<!-- Image Column -->
-										<div class="col-6 col-12-small" style="display: flex; align-items: center; justify-content: center;">
-											<img src="images/staryab.png" alt="Staryab logo" style="max-width: 100%; height: auto; border-radius: 8px;">
-										</div>
+								<!-- Staryab -->
+								<div class="two-col" style="margin-top: 3rem;">
+									<div>
+										<h3 class="accent">Staryab</h3>
+										<p style="text-align: justify;">
+											I am a co-manager and author at
+											<a href="https://staryab.com" target="_blank" rel="noopener">Staryab</a>,
+											a monthly astrophysical literature website in Farsi, run by Iranian astronomers from around the
+											world. Staryab aims to bridge the gap between professional astronomy and those at the start of
+											their journey — undergraduate students in physics and astronomy, passionate high school students,
+											and amateur astronomers. Each month, we feature a paper and present it in a clear, accessible
+											format for our readers. These articles are prepared by Iranian professional astronomers, both
+											within Iran and abroad. If you're interested in contributing to Staryab, don't hesitate to get in
+											touch — we'd love to hear from you!
+										</p>
+										<a href="https://www.instagram.com/staryab.astro/?hl=en" target="_blank" rel="noopener"
+											class="icon brands alt fa-instagram accent" style="font-size: 20px; text-decoration: none;">
+											<span style="margin-left: 8px;">Staryab on Instagram</span>
+										</a>
 									</div>
+									<div>
+										<img src="images/staryab.png" alt="Staryab logo" />
+									</div>
+								</div>
 
-									<!-- POWUR Section -->
-									<div class="row" style="margin-top: 50px;">
-										<!-- Text Column -->
-										<div class="col-6 col-12-small">
-											<h3 style="text-align: justify; color: rgba(251, 214, 7, 0.93);">POWUR</h3>
-											<p style="text-align: justify;">
+								<!-- POWUR -->
+								<div class="two-col" style="margin-top: 3rem;">
+									<div>
+										<h3 class="accent">POWUR</h3>
+										<p style="text-align: justify;">
 											I am the president of
-											<a href="https://highlanderlink.ucr.edu/organization/powur" target="_blank">POWUR</a>,
-											the Physics Organization for Womxn and the Under-Represented.
-
-											POWUR’s aim is to create a community focused on equity and self-advocacy for all
-											members of the Department of Physics and Astronomy. We do this by holding different
-											events such as socials, movie nights, Inclusivity Seminars, Mental Health Panels, book clubs, and more.
-											If you’re interested in sharing your work and engaging in discussions with us at UCR, please get in touch!
-											We would love to have you join us. Check out our website
-											<a href="https://sites.google.com/view/ucr-powur" target="_blank">here</a>
+											<a href="https://highlanderlink.ucr.edu/organization/powur" target="_blank" rel="noopener">POWUR</a>,
+											the Physics Organization for Womxn and the Under-Represented. POWUR's aim is to create a community
+											focused on equity and self-advocacy for all members of the Department of Physics and Astronomy. We
+											do this by holding different events such as socials, movie nights, Inclusivity Seminars, Mental
+											Health Panels, book clubs, and more. If you're interested in sharing your work and engaging in
+											discussions with us at UCR, please get in touch! We would love to have you join us. Check out our
+											<a href="https://sites.google.com/view/ucr-powur" target="_blank" rel="noopener">website</a>
 											to learn more!
-											</p>
-
-											<!-- Social Links -->
-											<a href="http://www.instagram.com/ucr_powur" 
-											class="icon brands alt fa-instagram" 
-											style="margin-top: 15px; font-size: 20px; color: rgba(251, 214, 7, 0.93); text-decoration: none;">
-												<span style="margin-left: 8px;">Check out our Instagram</span>
-											</a><br>
-										</div>
-
-										<!-- Image Column -->
-										<div class="col-6 col-12-small" style="display:flex; align-items:center; justify-content:center;">
-										<img src="images/powur.png"
-											alt="AURORA event or group photo"
-											style="max-width: 100%; height: auto; border-radius: 8px;">
-										</div>
-
-									<!-- AURORA Section -->
-									<div class="row" style="margin-top: 50px;">
-										<!-- Text Column -->
-										<div class="col-6 col-12-small">
-											<h3 style="text-align: justify; color: rgba(251, 214, 7, 0.93);">AURORA</h3>
-											<p style="text-align: justify;">
-												I am a core member of
-												<a href="https://highlanderlink.ucr.edu/organization/aurora" target="_blank">AURORA</a>,
-												the Astronomy Union for Reading, Outreach, and Research Activities.
-
-												I am actively involved in organizing events and initiatives to create a vibrant and engaging community 
-												for graduate students in astronomy at UCR and beyond. Currently, we are reaching out to scientists—including 
-												faculty, postdocs, and especially graduate students—from around the world to invite them to share their exciting research. 
-												Our goal is to foster discussions and explore different research fields together.
-
-												If you’re interested in sharing your work and engaging in discussions with us at UCR, please get in touch! 
-												We would love to have you join us!
-											</p>
-
-											<!-- Social Links -->
-											<a href="https://www.instagram.com/ucr.aurora/" 
-											class="icon brands alt fa-instagram" 
-											style="margin-top: 15px; font-size: 20px; color: rgba(251, 214, 7, 0.93); text-decoration: none;">
-												<span style="margin-left: 8px;">Check out our Instagram</span>
-											</a><br>
-											<a href="https://www.youtube.com/@auroraatucr" 
-											class="icon brands alt fa-youtube" 
-											style="margin-top: 15px; font-size: 20px; color: rgba(251, 214, 7, 0.93); text-decoration: none;">
-												<span style="margin-left: 8px;">Watch us on YouTube</span>
-											</a>
-										</div>
-
-										<!-- Image Column -->
-										<div class="col-6 col-12-small" style="display: flex; align-items: center; justify-content: center;">
-											<img src="images/aurora.png" alt="AURORA event or group photo" style="max-width: 60%; height: auto; border-radius: 8px;">
-										</div>
+										</p>
+										<a href="http://www.instagram.com/ucr_powur" target="_blank" rel="noopener"
+											class="icon brands alt fa-instagram accent" style="font-size: 20px; text-decoration: none;">
+											<span style="margin-left: 8px;">POWUR on Instagram</span>
+										</a>
 									</div>
+									<div>
+										<img src="images/powur.png" alt="POWUR group photo" />
+									</div>
+								</div>
 
-							</section>
-						</div>
+								<!-- AURORA -->
+								<div class="two-col" style="margin-top: 3rem;">
+									<div>
+										<h3 class="accent">AURORA</h3>
+										<p style="text-align: justify;">
+											I am a core member of
+											<a href="https://highlanderlink.ucr.edu/organization/aurora" target="_blank" rel="noopener">AURORA</a>,
+											the Astronomy Union for Reading, Outreach, and Research Activities. I am actively involved in
+											organizing events and initiatives to create a vibrant and engaging community for graduate students
+											in astronomy at UCR and beyond. Currently, we are reaching out to scientists — including faculty,
+											postdocs, and especially graduate students — from around the world to invite them to share their
+											exciting research. Our goal is to foster discussions and explore different research fields together.
+											If you're interested in sharing your work and engaging in discussions with us at UCR, please get in
+											touch! We would love to have you join us!
+										</p>
+										<a href="https://www.instagram.com/ucr.aurora/" target="_blank" rel="noopener"
+											class="icon brands alt fa-instagram accent" style="font-size: 20px; text-decoration: none;">
+											<span style="margin-left: 8px;">AURORA on Instagram</span>
+										</a><br />
+										<a href="https://www.youtube.com/@auroraatucr" target="_blank" rel="noopener"
+											class="icon brands alt fa-youtube accent" style="font-size: 20px; text-decoration: none;">
+											<span style="margin-left: 8px;">AURORA on YouTube</span>
+										</a>
+									</div>
+									<div>
+										<img src="images/aurora.png" alt="AURORA group photo" />
+									</div>
+								</div>
+							</div>
+						</section>
 
+					<!-- CV & highlights -->
+						<section id="cv">
+							<div class="inner">
+								<header class="major">
+									<h2>CV &amp; highlights</h2>
+								</header>
 
-						
-<!-- CV & Highlights Section -->
-<section id="one">
-    <div class="inner">
-        <h1 id="CV & Highlights">
-            <a href="https://scholar.google.com/citations?user=mE1smmkAAAAJ&hl=en" target="_blank">CV & Highlights</a>
-        </h1>
+								<div class="two-col">
+									<div>
+										<h3 class="accent">Education</h3>
+										<ul>
+											<li><strong>PhD in Astronomy</strong> (expected 2028)<br />
+												University of California, Riverside, California</li>
+											<li><strong>MSc in Astronomy</strong> (2024)<br />
+												University of California, Riverside, California</li>
+											<li><strong>BSc in Physics</strong> (2022)<br />
+												Shiraz University, Shiraz, Iran</li>
+										</ul>
+									</div>
+									<div>
+										<h3 class="accent">Positions</h3>
+										<ul>
+											<li><strong>Graduate Research Assistant</strong> (2023–present)<br />
+												University of California, Riverside, CA</li>
+											<li><strong>Postbaccalaureate Researcher</strong> (2022–2023)<br />
+												Institute for Research in Fundamental Sciences, Tehran, Iran</li>
+											<li><strong>Undergraduate Research Assistant</strong> (2018–2022)<br />
+												Biruni Observatory, Shiraz University, Shiraz, Iran</li>
+										</ul>
+									</div>
+								</div>
 
-        <!-- Two-Column Layout -->
-        <div class="container">
-            <!-- Left Column: Education -->
-            <div class="column">
-                <h2 style="color: rgba(251, 214, 7, 0.934)">Education</h2>
-                <ul>
-                    <li><strong>Ph.D. in Astronomy</strong> (Expected 2028) <br>
-                        University of California, Riverside, California</li>
-                    <li><strong>M.Sc. in Astronomy</strong> (2024) <br>
-                        University of California, Riverside, California</li>
-                    <li><strong>B.Sc. in Physics</strong> (2022) <br>
-                        Shiraz University, Shiraz, Iran</li>
-                </ul>
-            </div>
+								<!--
+									TODO: consider committing cv.pdf to this repo and pointing the link below at it.
+									Google Drive links break when permissions change, and some campus networks block Drive.
+								-->
+								<p style="margin-top: 2rem;">
+									<a class="accent" style="font-weight: bold;"
+										href="https://drive.google.com/file/d/1pxeYDbkg359MdWfcztpcGkz8jjJjk9AG/view?usp=sharing"
+										target="_blank" rel="noopener">Download my CV</a>
+								</p>
+							</div>
+						</section>
 
-            <!-- Right Column: Positions -->
-            <div class="column">
-                <h2 style="color: rgba(251, 214, 7, 0.934)">Positions</h2>
-                <ul>
-                    <li><strong>Graduate Research Assistant</strong> (2023-Present) <br>
-                        University of California, Riverside, CA</li>
-                    <li><strong>Undergraduate Research Assistant</strong> (2022-2023) <br>
-                        Institute for Research in Fundamental Sciences, Tehran, Iran</li>
-                    <li><strong>Undergraduate Research Assistant</strong> (2018-2022) <br>
-                        Biruni Observatory, Shiraz University, Shiraz, Iran</li>
-                </ul>
-            </div>
-        </div>
+				</div>
 
-		<!-- Link to CV (Aligned to the Left) -->
-<!-- Link to CV (Aligned to the Left) -->
-<div style="text-align: left; margin-top: 20px;">
-    <iframe src="cv.pdf" width="100%" height="800px" style="border: none;">
-        Your browser doesn't support embedded PDFs.
-        <a href="cv.pdf" target="_blank">View My CV</a>
-    </iframe>
-</div>
-
-
-<!-- CSS Styling for Two-Column Layout -->
-<style>
-    .container {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
-    .column {
-        width: 48%; /* Adjust width as needed */
-    }
-</style>
-
-						<hr>
-
-						
-
-				<!-- Contact -->
+			<!-- Contact -->
 				<section id="contact">
 					<div class="inner">
 						<section class="split">
 							<section>
 								<div class="contact-method">
-									<span class="icon solid alt fa-envelope"></span>
+									<span class="icon solid alt fa-envelope" aria-hidden="true"></span>
 									<h3>Email</h3>
-									<a href="#">faezeh.akhlaghimanesh@gmail.com</a>
+									<a href="mailto:faezeh.akhlaghimanesh@gmail.com">faezeh.akhlaghimanesh@gmail.com</a>
 								</div>
 							</section>
 							<section>
 								<div class="contact-method">
-									<span class="icon solid alt fa-home"></span>
+									<span class="icon solid alt fa-home" aria-hidden="true"></span>
 									<h3>Address</h3>
 									<span>900 University Ave.<br />
 										Riverside, CA 92521<br />
-									United States of America</span>
+										United States of America</span>
 								</div>
 							</section>
 						</section>
 					</div>
 				</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://x.com/FaezeAkhlaghi" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.flickr.com/photos/201042039@N05/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/faeze_manesh/?hl=en" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/FaezehAkhlaghimanesh" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/faezehakhlaghimanesh/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://x.com/FaezeAkhlaghi" target="_blank" rel="noopener" class="icon brands alt fa-twitter"><span class="label">X</span></a></li>
+							<li><a href="https://www.flickr.com/photos/201042039@N05/" target="_blank" rel="noopener" class="icon brands alt fa-flickr"><span class="label">Flickr</span></a></li>
+							<li><a href="https://www.instagram.com/faeze_manesh/?hl=en" target="_blank" rel="noopener" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/FaezehAkhlaghimanesh" target="_blank" rel="noopener" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/faezehakhlaghimanesh/" target="_blank" rel="noopener" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 2026 Faezeh Manesh</li>
+							<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
 
-			</div>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
