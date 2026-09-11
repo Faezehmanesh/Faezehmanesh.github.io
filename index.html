@@ -76,6 +76,22 @@
 				margin-bottom: 20px;
 			}
 
+			/*
+			  Tiles: three across on desktop so the six tiles fill two rows
+			  instead of three. Forty's own rule is #main.tiles article at the
+			  same specificity, and this block loads after main.css, so it wins.
+			  Below 980px it falls back to the template's two- then one-column
+			  layouts untouched.
+			*/
+			@media screen and (min-width: 981px) {
+				#main.tiles article {
+					width: 33.3333%;
+					flex-basis: 33.3333%;
+					min-height: 20em;
+					padding: 3em 2.5em;
+				}
+			}
+
 			/* Visible keyboard focus, which the template does not provide everywhere. */
 			a:focus-visible,
 			button:focus-visible {
@@ -154,7 +170,6 @@
 									</span>
 									<header class="major">
 										<h3><a href="generic.html#about" class="link">About me</a></h3>
-										<p>Who I am and how I ended up studying the early universe.</p>
 									</header>
 								</article>
 								<article>
@@ -163,7 +178,6 @@
 									</span>
 									<header class="major">
 										<h3><a href="generic.html#research" class="link">Research</a></h3>
-										<p>Galaxy evolution at high redshift, with JWST and HST.</p>
 									</header>
 								</article>
 								<article>
@@ -172,7 +186,6 @@
 									</span>
 									<header class="major">
 										<h3><a href="generic.html#publications" class="link">Publications</a></h3>
-										<p>Papers I've written and contributed to.</p>
 									</header>
 								</article>
 								<article>
@@ -182,7 +195,6 @@
 									</span>
 									<header class="major">
 										<h3><a href="generic.html#cv" class="link">CV &amp; highlights</a></h3>
-										<p>Education, positions, and a downloadable CV.</p>
 									</header>
 								</article>
 								<article>
@@ -192,7 +204,6 @@
 									</span>
 									<header class="major">
 										<h3><a href="generic.html#outreach" class="link">Community engagement &amp; outreach</a></h3>
-										<p>Staryab, POWUR, AURORA, and stargazing nights.</p>
 									</header>
 								</article>
 								<article>
@@ -202,7 +213,6 @@
 									<header class="major">
 										<!-- TODO: confirm the #teaching anchor exists in photo_gallery.html, then add it back. -->
 										<h3><a href="photo_gallery.html" class="link">Photo gallery</a></h3>
-										<p>Telescopes, conferences, and the people along the way.</p>
 									</header>
 								</article>
 							</section>
