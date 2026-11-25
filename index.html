@@ -59,21 +59,34 @@
 			  }
 			*/
 
+			/* Photo on the left, greeting on the right; stacks on small screens. */
 			#banner .inner {
 				position: relative;
 				z-index: 2;
-				text-align: center;
 				color: #fff;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				gap: 3rem;
+			}
+
+			.banner-text {
+				flex: 1 1 20rem;
 			}
 
 			.banner-image {
-				width: 300px;
-				height: 300px;
-				max-width: 70vw;
-				max-height: 70vw;
-				border-radius: 50%;
+				width: 340px;
+				height: 425px;
+				max-width: 80vw;
+				border-radius: 8px;
 				object-fit: cover;
-				margin-bottom: 20px;
+			}
+
+			@media screen and (max-width: 736px) {
+				#banner .inner {
+					text-align: center;
+				}
 			}
 
 			/*
@@ -90,6 +103,29 @@
 					min-height: 20em;
 					padding: 3em 2.5em;
 				}
+			}
+
+			/* Contact: Email, Address and social links side by side in one row. */
+			#contact > .inner > .split.row {
+				width: 100%;
+				border-right: 0;
+				padding: 0;
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			#contact > .inner > .split.row > * {
+				flex: 1 1 16rem;
+				overflow-wrap: anywhere;
+			}
+
+			#contact > .inner > .split.row > *:before {
+				display: none;
+			}
+
+			/* Social icons inside a contact item sit in a normal row, not pinned like the header icon. */
+			.contact-method .icons .icon {
+				position: static;
 			}
 
 			/* Visible keyboard focus, which the template does not provide everywhere. */
@@ -135,6 +171,7 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="generic.html#about">About me</a></li>
 							<li><a href="generic.html#research">Research</a></li>
+							<li><a href="generic.html#talks">Talks &amp; posters</a></li>
 							<li><a href="generic.html#publications">Publications</a></li>
 							<li><a href="photo_gallery.html">Photo gallery</a></li>
 							<li><a href="generic.html#outreach">Community engagement &amp; outreach</a></li>
@@ -146,15 +183,17 @@
 				<!-- Banner -->
 					<section id="banner" class="major">
 						<div class="inner">
-							<img src="images/lick_prof.jpg" alt="Faezeh Manesh at Lick Observatory" class="banner-image" />
-							<header class="major">
-								<h1>Hi! I'm Faezeh Manesh!</h1>
-							</header>
-							<div class="content">
-								<p>If you're curious about me and my research, you've come to the right place!</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Take a look</a></li>
-								</ul>
+							<img src="images/Faezeh.JPG" alt="Faezeh Manesh" class="banner-image" />
+							<div class="banner-text">
+								<header class="major">
+									<h1>Hi! I'm Faezeh Manesh!</h1>
+								</header>
+								<div class="content">
+									<p>If you're curious about me and my research, you've come to the right place!</p>
+									<ul class="actions">
+										<li><a href="#one" class="button next scrolly">Take a look</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</section>
@@ -208,7 +247,7 @@
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
+										<img src="img/thelook.png" alt="" />
 									</span>
 									<header class="major">
 										<!-- TODO: confirm the #teaching anchor exists in photo_gallery.html, then add it back. -->
@@ -222,7 +261,7 @@
 				<!-- Contact -->
 					<section id="contact">
 						<div class="inner">
-							<section class="split">
+							<section class="split row">
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope" aria-hidden="true"></span>
@@ -239,6 +278,19 @@
 											United States of America</span>
 									</div>
 								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-globe" aria-hidden="true"></span>
+										<h3>Find me online</h3>
+										<ul class="icons">
+											<li><a href="https://x.com/FaezeAkhlaghi" target="_blank" rel="noopener" class="icon brands alt fa-twitter"><span class="label">X</span></a></li>
+											<li><a href="https://www.flickr.com/photos/201042039@N05/" target="_blank" rel="noopener" class="icon brands alt fa-flickr"><span class="label">Flickr</span></a></li>
+											<li><a href="https://www.instagram.com/faeze_manesh/?hl=en" target="_blank" rel="noopener" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="https://github.com/FaezehAkhlaghimanesh" target="_blank" rel="noopener" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+											<li><a href="https://www.linkedin.com/in/faezehakhlaghimanesh/" target="_blank" rel="noopener" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										</ul>
+									</div>
+								</section>
 							</section>
 						</div>
 					</section>
@@ -246,13 +298,6 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://x.com/FaezeAkhlaghi" target="_blank" rel="noopener" class="icon brands alt fa-twitter"><span class="label">X</span></a></li>
-								<li><a href="https://www.flickr.com/photos/201042039@N05/" target="_blank" rel="noopener" class="icon brands alt fa-flickr"><span class="label">Flickr</span></a></li>
-								<li><a href="https://www.instagram.com/faeze_manesh/?hl=en" target="_blank" rel="noopener" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/FaezehAkhlaghimanesh" target="_blank" rel="noopener" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/faezehakhlaghimanesh/" target="_blank" rel="noopener" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
 							<ul class="copyright">
 								<li>&copy; 2026 Faezeh Manesh</li>
 								<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
